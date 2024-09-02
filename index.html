@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUBBIAH PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="images/sm1.webp" type="image/png">
+  </head>
+  <style>
+    .nav-item .nav-link{
+        color: white;
+        text-align: right;
+        float: right;
+    }
+    .nav-link .active{
+        color: white;
+    }
+    .navbar {
+            background-color: black;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%288, 8, 8, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        }
+        .navbar-toggler:hover,
+        .navbar-toggler:focus {
+            background:none;
+            border: none;
+        }
+        .logo {
+        float: left;
+        margin-top: 11px;
+        margin-left: 1px;
+        background: none;
+        border-radius: 10%;
+        height: 100%;
+        width: 100%;
+    } 
+    .nav{
+        font-family: cursive;
+        font-size: 15px;
+        background-color: black;
+    }
+    .navbar .nav-link{
+     font-size: 18px;
+     margin-left: 30px;
+     position: relative;
+     background: none;
+  }
+  .navbar .nav-link::before{
+     content: '';
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     right: 0;
+     margin-inline: auto;
+     width: 0%;
+     height: 2px;
+     background-color: #f9f064;
+     box-shadow: 0px 0px 0px #f9f06d;
+     transition: all .6s ease;
+     transform-origin: center;
+  }
+  .navbar .nav-item:hover .nav-link::before{
+     width: 100%;
+
+  }
+  .navbar .nav-link.active{
+    font-size: 20px;
+    color: white;
+    background: none;
+  }
+  .navbar .nav-link{
+    color: white;
+    background: none;
+    font-size: 20px;
+  }
+  .navbar .navbar-brand img{
+    max-height: 100px;
+  }
+  #icon{
+    font-size: 25px;
+    margin-right: 5px;
+    color: white;
+  }
+  #icon1{
+    font-size: 25px;
+    margin-left: 5px;
+    color: white;
+  }
+  #icon2{
+    font-size: 20px;
+    margin-left: 8px;
+    color: white;
+  }
+  .btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px 10px 10px;
+  }
+  .btn:hover{
+    background-color: rgb(62, 62, 231);
+    border: 2px solid white;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+            display: none;
+            background: none;
+        }
+
+        /* Display FontAwesome icon */
+        .navbar-toggler .fa-bars {
+            display: block;
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+  <body style="background-color:black; color: white;">
+    <nav class="navbar navbar-expand-lg" style="position: fixed;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo1-removebg-preview.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="background-color: black;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house" id="icon"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fa-solid fa-user" id="icon"></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="fa-solid fa-book" id="icon"></i>Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap" id="icon"></i>Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><i class="fa-solid fa-globe" id="icon"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fa-regular fa-envelope" id="icon"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+       <!-- Home -->
+
+    <section class="home" id="home">
+      <div class="social">
+          <a href="https://github.com/subbiah-157"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/subbiah-muthu-m"><i class='bx bxl-linkedin'></i></a>
+          <!-- <a href="#"><i class='bx bxl-instagram'></i></a> -->
+      </div>
+
+      <div class="home-img" data-aos="fade-left" data-aos-duration="3000">
+          <img src="images/design.webp" alt="" style="width: 80%; height: 60%;">
+      </div>
+
+      <div class="home-text" data-aos="fade-right" data-aos-duration="1000">
+          <span>Hello, I'm</span>
+          <h1 data-aos="fade-up-right" style="color: skyblue;">Subbiah Muthu M,</h1>
+          <h2>FullStack Developer</h2>
+          <a href="#contact" class="btn" style="border: 2px solid white;">Contact Me<i class="fa-solid fa-paper-plane" id="icon2"></i></a>
+      </div>
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+      <div class="heading">
+          <h2>About Me</h2>
+          <span>Introduction</span>
+      </div>
+
+      <div class="about-container" data-aos="zoom-in-up" data-aos-duration="3000">
+          <div class="about-img">
+              <img src="images/SM.jpg" alt="">
+          </div>
+
+          <div class="about-text" data-aos="zoom-in-left" data-aos-duration="3000">
+              <p>I'm a final-year undergraduate, passionate about technology and an avid reader.</p>
+              <p>I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments.</p> 
+              <p>A competitive position to enhance my skills and contribute to a professional organization.</p>
+              <p>I'm very much passionate to learn new stuff that interests me and can help me to get better.</p>
+
+              <div class="information">
+                  <div class="info-box">
+                      <i class="bx bxs-user"></i>
+                      <span>Subbiah Muthu M</span>
+                  </div>
+
+                  <div class="info-box">
+                      <i class="bx bxs-phone"></i>
+                      <span>+91 9500483108</span>
+                  </div>
+
+                  <div class="info-box">
+                      <i class="bx bxs-envelope"></i>
+                      <span><a href="mailto:subbiahmuthu397@gmail.com"
+                              style="color: white; text-decoration: none;">subbiahmuthu397@gmail.com</a></span>
+                  </div>
+
+              </div>
+
+              <a href="https://drive.google.com/file/d/1AjmIHdOcD9EK51xPp49VwQQ_Qw0pJjNv/view?usp=drive_link"
+                  class="btn">DOWNLOAD<i class="fa-solid fa-download fa-fade" id="icon" style="margin-left: 1rem;"></i></a>
+          </div>
+      </div>
+  </section>
+
+  <section class="skills" id="skills" data-aos="zoom-out-right" data-aos-duration="3000">
+      <div class="heading">
+          <h2>Skills</h2>
+          <span>My Skills</span>
+      </div>
+
+      <div class="skills-container">
+          <div class="bars">
+
+              <div class="bars-box">
+                  <h3>C</h3>
+                  <span>60%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar c-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                  <h3>JAVA</h3>
+                  <span>65%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar java-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                  <h3>HTML</h3>
+                  <span>95%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar html-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                  <h3>CSS</h3>
+                  <span>75%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar css-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                  <h3>JAVA SCRIPT</h3>
+                  <span>55%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar js-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                  <h3>SQL</h3>
+                  <span>50%</span>
+                  <div class="light-bar"></div>
+                  <div class="percent-bar sql-bar"></div>
+              </div>
+
+              <div class="bars-box">
+                <h3>REACT</h3>
+                <span>40%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar react-bar"></div>
+            </div>
+
+          </div>
+
+          <div class="skills-img" ata-aos="zoom-out-down" data-aos-duration="3000">
+              <img src="images/123.png" alt="">
+          </div>
+      </div>
+  </section>
+
+  <section class="skills" id="skills" data-aos="zoom-out-right" data-aos-duration="3000">
+    <div class="heading">
+        <h2>Additional Skills</h2>
+        <span>My Fashion</span>
+    </div>
+
+    <div class="skills-container">
+        <div class="bars">
+
+            <!-- Additional Skills -->
+            <div class="bars-box">
+                <h3>Wood Carving</h3>
+                <span>80%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar wood-carving-bar"></div>
+            </div>
+
+            <div class="bars-box">
+                <h3>Editing</h3>
+                <span>70%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar video-editing-bar"></div>
+            </div>
+
+        </div>
+
+        <div class="skills-img" data-aos="zoom-out-down" data-aos-duration="3000">
+            <img src="images/ad1.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <div class="heading">
+      <h2>Education</h2>
+      <span>My Academic Background</span>
+    </div>
+    <div class="education-container">
+      <div class="education-box" data-aos="fade-right" data-aos-duration="2000">
+        <h3>Bachelor of Engineering in Computer Science & Technology</h3>
+        <span>Karpagam College of Engineering, Coimbatore</span>
+        <p>2021 - 2025</p>
+        <p>CGPA: 7.5*</p>
+      </div>
+      <div class="education-box" data-aos="fade-left" data-aos-duration="2000">
+        <h3>HSC</h3>
+        <span>St.Marks Higher Secondary School, Thoothukudi</span>
+        <p>2020 - 2021</p>
+        <p style="text-transform: uppercase;">Percentage: 81%</p>
+      </div>
+      <div class="education-box" data-aos="fade-left" data-aos-duration="2000">
+        <h3>SSLC</h3>
+        <span>St.Marks Higher Secondary School, Thoothukudi</span>
+        <p>2018 - 2019</p>
+        <p style="text-transform: uppercase;">Percentage: 70.2%</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="services" id="services">
+    <div class="heading">
+        <h2>Area Of Interest</h2>
+    </div>
+
+    <div class="services-content">
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Development</h3><br>
+        </div>
+
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Software Development</h3><br>
+        </div>
+
+        <div class="services-box">
+            <i class="fas fa-database"></i>
+            <h3>DBMS</h3><br>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="center-bottom">
+    <div class="heading">
+        <h2>Projects</h2>
+        <span>My Works</span>
+    </div>
+
+    <div class="portfolio-content">
+        <div class="portfolio-img">
+            <a href="https://subbiahfurnituresandinteriorsmain.netlify.app/" target="_blank">
+                <img src="images/sfi.png" alt="Subbiah Furnitures and Interiors">
+                <div class="portfolio-desc">
+                    <h3>Subbiah Furnitures & interiors</h3>
+                    <p>Showcase of furniture designs with a blend of traditional and modern elements.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap, Node.js, Express, MongoDB
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-img">
+            <a href="https://cloneprojectinten.netlify.app/" target="_blank">
+                <img src="images/netflix clone.png" alt="Netflix Clone Web App">
+                <div class="portfolio-desc">
+                    <h3>Netflix Clone</h3>
+                    <p>This is a front-end clone project of Netflix organized by IBM, showcasing skills in creating a modern and responsive user interface.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> HTML, CSS
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-img">
+            <a href="https://votingsystemz.netlify.app/" target="_blank">
+                <img src="images/online voting.png" alt="Online Voting System">
+                <div class="portfolio-desc">
+                    <h3>Online Voting System</h3>
+                    <p>An online platform for secure and efficient voting.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> HTML, CSS, JavaScript, Java Servlets, MySQL
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-img">
+            <a href="https://msrconstructionworks.netlify.app/" target="_blank">
+                <img src="images/msr.png" alt="MSR Construction Works (Exterior)">
+                <div class="portfolio-desc">
+                    <h3>MSR Construction Works (Exterior)</h3>
+                    <p>A showcase of exterior designs and construction projects.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> React
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-img">
+            <a href="https://e-portalforcms.netlify.app/" target="_blank">
+                <img src="images/cms.png" alt="E-Portal for Case Management in Judicial Administration">
+                <div class="portfolio-desc">
+                    <h3>E-Portal for Case Management in Judicial Administration</h3>
+                    <p>An online portal to manage cases in the judicial administration system.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express, MongoDB
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-img">
+            <a href="https://sudokusolvergenerator.netlify.app/" target="_blank">
+                <img src="images/sudoku.png" alt="Sudoku Solver and Generator">
+                <div class="portfolio-desc">
+                    <h3>Sudoku Solver and Generator</h3>
+                    <p>A web application for solving and generating Sudoku puzzles.</p>
+                    <p class="technologies">
+                        <strong>Technologies:</strong> HTML, CSS, JavaScript
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+  <section class="contact" id="contact" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+      <div class="heading">
+          <h2>Contact</h2>
+          <span>Contact Me</span>
+      </div>
+
+      <div class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="access_key" value="4094ad1a-e4ef-405a-9844-848aa6e6141b">
+              <input type="text" placeholder="Your Name" name="name" id="name" required>
+              <input type="email" placeholder="Your Email" name="email" id="email" required>
+              <textarea cols="30" rows="10" placeholder="Write Message Here..." name="message" 
+                  id="message" required></textarea>
+              <button class="contact-button">Submit</button>
+          </form>
+      </div>
+  </section>
+
+  <div class="footer" style="background-color: black;">
+      <div class="footer-social">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-youtube'></i></a>
+      </div>
+
+  </div>
+
+  <div class="copyright">
+      <p>&copy; 2024 Copyrights. All Rights Reserved.</p>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/a2b58a3613.js" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let btn = document.querySelector(".navbar-toggler");
+        let icon = btn.querySelector(".fa");
+        let navbarCollapse = document.querySelector("#navbarSupportedContent");
+        
+        btn.onclick = function() {
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.replace("fa-bars", "fa-times");
+                navbarCollapse.classList.add("show");
+            } else {
+                icon.classList.replace("fa-times", "fa-bars");
+                navbarCollapse.classList.remove("show");
+            }
+        }
+    });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
